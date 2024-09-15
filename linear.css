@@ -49,10 +49,30 @@ body {
 }
 .my-nested-wraper aside {
     background: #fcb045;
+    
 }
 @media screen and (min-width: 800px) {
     .my-nested-wraper {
-        flex-direction: row;
+        flex-flow: wrap row;
+
+}
+    .my-nested-wraper figure {
+        flex-basis: 60%;
+        height: 100vh;
+    }
+    .my-nested-wraper aside {
+        flex-basis: 20%;
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .my-nested-wraper figure {
+        flex-basis: 30%;
+        height: 100vh;
+    }
+    .my-nested-wraper aside {
+        flex-basis: 10%;
+        height: 100vh;
     }
     
 }
